@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Library for creating a hidden message window to enable console applications to receive windows messages including taskkill.</Description>
+  </PropertyGroup>
+
+</Project>
