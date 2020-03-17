@@ -7,7 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Use GitVersioning for nuget packages -->
-    <PackageReference Include="GR.MSBuild.PublicKeyTokenUpdater" Version="1.2.1" PrivateAssets="All" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.0.24" PrivateAssets="All" />
   </ItemGroup>
 </Project>
