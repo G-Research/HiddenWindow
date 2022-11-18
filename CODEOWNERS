@@ -1,5 +1,0 @@
-# Default owners for everything in the repo.
-# Required for code review to add new projects.
-*                                                         @williamro
-
-/CODEOWNERS                                               @williamro
