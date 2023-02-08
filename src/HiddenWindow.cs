@@ -11,6 +11,10 @@ namespace HiddenWindow
     // TODO: I think I would like some logging...
     public class HiddenWindow
     {
+        internal HiddenWindow()
+        {
+        }
+
         [DllImport("user32.dll", SetLastError = true)]
         private static extern IntPtr CreateWindowEx(
            WindowStylesEx dwExStyle,
