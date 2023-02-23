@@ -14,6 +14,8 @@
     <Authors>G-Research</Authors>
     <Copyright>Copyright 2020-$([System.DateTime]::Now.ToString('yyyy')) G-Research Limited</Copyright>
     <Description>Library for creating a hidden message window to enable console applications to receive windows messages including taskkill.</Description>
+    <AssemblyTitle>HiddenWindow</AssemblyTitle>
+    <AssemblyProduct>HiddenWindow</AssemblyProduct>
   </PropertyGroup>
 
 </Project>
