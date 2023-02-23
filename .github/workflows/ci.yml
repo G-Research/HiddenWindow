@@ -76,10 +76,6 @@ jobs:
           path: artefacts
       - name: Publish to NuGet
         run: |
-          if (-not ("${{ github.ref }}" -like "refs/tags/v*")) {
-              $suffix = "preview-$(Get-Date -Format yyyyMMddHHmmss -AsUTC)-$(git rev-parse --short HEAD)"
-              $params = "--version-suffix", $suffix
-          }
           if ("${{ github.ref }}" -like "refs/tags/v*") {
               $tag = "${{ github.ref }}".SubString(11)
               $expectedHiddenWindowFile = "artefacts/HiddenWindow.$tag.nupkg"
@@ -89,5 +85,5 @@ jobs:
                   echo "::error ::Expected file $expectedHiddenWindowFile doesn't exist"
                   exit 1
               }
+              dotnet nuget push "artefacts/HiddenWindow.${{ env.NBGV_NuGetPackageVersion }}.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
           }
-          dotnet nuget push "artefacts/HiddenWindow.${{ env.NBGV_NuGetPackageVersion }}.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
