@@ -3,7 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <PackageReleaseNotes>https://github.com/G-Research/HiddenWindow/blob/master/CHANGELOG.md</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/G-Research/HiddenWindow</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/G-Research/HiddenWindow</RepositoryUrl>
+    <Authors>G-Research</Authors>
+    <Copyright>Copyright 2020-$([System.DateTime]::Now.ToString('yyyy')) G-Research Limited</Copyright>
     <Description>Library for creating a hidden message window to enable console applications to receive windows messages including taskkill.</Description>
+    <AssemblyTitle>HiddenWindow</AssemblyTitle>
+    <AssemblyProduct>HiddenWindow</AssemblyProduct>
   </PropertyGroup>
 
 </Project>
