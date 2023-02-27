@@ -85,5 +85,5 @@ jobs:
                   echo "::error ::Expected file $expectedHiddenWindowFile doesn't exist"
                   exit 1
               }
-              dotnet nuget push "artefacts/HiddenWindow.${{ env.NBGV_NuGetPackageVersion }}.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+              dotnet nuget push "artefacts/HiddenWindow.*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
           }
