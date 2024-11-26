@@ -16,3 +16,7 @@ Add a reference to the nuget package and call:
 HiddenWindow.OnClose += OnCloseEventHandler
 HiddenWindow.Create();
 ```
+
+## Security
+
+Please see our [security policy](https://github.com/G-Research/HiddenWindow/blob/main/SECURITY.md) for details on reporting security vulnerabilities.
