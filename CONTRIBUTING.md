@@ -11,7 +11,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ### Reporting Bugs
 
 - Check if the bug has already been reported in the [Issues](https://github.com/G-Research/HiddenWindow/issues) section.
-- If not, create a new issue with a clear title and description.
+- If not, create a new issue with a clear title and description, following the [issue template](.github/ISSUE_TEMPLATE/bug_report_form.yaml).
 - Include as much relevant information as possible, such as:
   - Steps to reproduce the issue
   - Expected behavior
@@ -22,18 +22,16 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ### Suggesting Enhancements
 
 - Check if the enhancement has already been suggested in the [Issues](https://github.com/G-Research/HiddenWindow/issues) section.
-- If not, create a new issue with a clear title and description.
+- If not, create a new issue with a clear title and description, following the [issue template](.github/ISSUE_TEMPLATE/feature_request_form.yaml).
 - Explain why this enhancement would be useful to most HiddenWindow users.
 - Include any mockups or examples if applicable.
 
 ### Pull Requests
 
 1. Fork the repository and create your branch from `main`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+2. Make sure your code lints.
+3. Make sure the [CI](https://github.com/G-Research/HiddenWindow/actions) pipeline passes.
+4. Issue that pull request!
 
 ## Development Setup
 
@@ -75,7 +73,3 @@ If you have questions or need help with contributing, please:
 
 1. Check the existing [Issues](https://github.com/G-Research/HiddenWindow/issues) to see if your question has already been answered.
 2. If not, create a new issue with your question.
-
-## License
-
-By contributing to HiddenWindow, you agree that your contributions will be licensed under the project's [Apache License 2.0](LICENSE).
