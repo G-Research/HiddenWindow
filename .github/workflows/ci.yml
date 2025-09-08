@@ -16,7 +16,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v5
         - name: Setup .NET SDK v6.0.x
-          uses: actions/setup-dotnet@v4
+          uses: actions/setup-dotnet@v5
           with:
             dotnet-version: 6.0.x
         - name: Check format
@@ -31,7 +31,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup .NET SDK v6.0.x
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 6.0.x
       - name: Build
@@ -46,7 +46,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup .NET SDK v6.0.x
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 6.0.x
       - name: Build and package
