@@ -57,7 +57,7 @@ jobs:
           setAllVars: true
       - run: echo "Package generated artefacts/HiddenWindow.${{ env.NBGV_NuGetPackageVersion }}.nupkg"
       - name: Upload NuGet package artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: nuget-packages
           path: artefacts/*.nupkg
